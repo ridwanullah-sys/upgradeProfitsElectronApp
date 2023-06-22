@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="js/renderer.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="../fontawesome/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <title>Upgrade Profits</title>
+  </head>
+  <body>
+    <div id="body">
+      <div id="side-bar">
+        <button id="user"><div id="nameInit">H</div></button>
+        <button id="historyButton">
+          <i class="fa-solid fa-folder-closed"></i>
+        </button>
+      </div>
+      <div id="main-body">
+        <div id="home">
+          <div id="navbar">
+            <div id="nav-right">
+              <button id="checkin">START</button>
+              <p style="font-weight: lighter; font-size: small">Tech Team</p>
+            </div>
+            <p id="nav-left">00:00:00</p>
+          </div>
+          <div id="worked_time">
+            <p>Worked Time:</p>
+            <p style="font-weight: bold" id="time-worked">0h 0m 0s</p>
+          </div>
+          <div id="sub-body">
+            <div id="left-sub-body">
+              <h3>Available tasks</h3>
+              <div id="tasks"></div>
+            </div>
+            <div id="right-sub-body">
+              <div>
+                <p>Task Name:</p>
+                <p class="value" id="chosentask">--</p>
+              </div>
+              <div>
+                <p>Checkin Time:</p>
+                <p class="value" id="check-in-time">-- : -- : --</p>
+              </div>
+              <div>
+                <p>Average mouse movement rate:</p>
+                <p class="value" id="mouseMove">0 moves/sec</p>
+              </div>
+              <div>
+                <p>Average mouse click rate:</p>
+                <p class="value" id="mouseClick">0 clicks/sec</p>
+              </div>
+
+              <div>
+                <p>Keyboard type rate:</p>
+                <p class="value" id="keyboardPress">0 press/sec</p>
+              </div>
+              <div id="apps">
+                <span>
+                  <p style="font-size: 24px">Opened Apps</p>
+                  <div id="listsOfApps"></div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="history"
+        style="display: none; padding: 10px; overflow: scroll; height: 100vh"
+      >
+        <div id="hisNav">
+          <button>History</button>
+          <p>Click to reload history</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
